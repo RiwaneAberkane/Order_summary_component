@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body{
+    background: url(order-summary-component-main/images/pattern-background-desktop.svg) no-repeat;
+    background-color: #E0E9FF;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+p, a, button{
+    font-size: 16px;
+}
+
+/* CONTAINER------------------------------------- */
+
+.container{
+    margin: auto; 
+    margin-top: 150px; 
+    width: 370px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px  hsl(225, 100%, 94%);
+}
+
+/* IMG HERO-------------------------------------- */
+
+.hero{
+    border-radius:20px 20px 0 0;
+}
+
+/* BOTTOM PART---------------------------------- */
+
+.txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.txt h2{
+    text-align: center;
+    padding-top: 50px;
+}
+
+.paragraphe{
+    text-align: center;
+    padding: 20px 40px;
+    color:  rgb(115, 115, 115);
+}
+
+.left{
+    display: flex;
+    align-items: center;
+}
+
+.left img{
+    width: 48px;
+    padding-right: 10px;
+}
+
+.plan{
+    width: 80%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F8F9FD;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.right a{
+   color: #382BE1;
+}
+
+.right a:hover{
+    text-decoration: none;
+    color: rgba(97, 58, 156, 0.772);
+}
+
+
+/* BUTTON---------------------------------------------- */
+
+.buttons{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.btn-payment{
+    background-color:#382BE1; 
+    padding: 10px;
+    color: white;
+    border-radius: 6px;
+    border: none;
+    height: 40px;
+    box-shadow: 10px 10px 20px hsla(245, 75%, 52%, .15), 15px 15px 30px hsla(245, 75%, 52%, .15);
+}
+
+.btn-payment:hover{
+    background-color:rgba(97, 58, 156, 0.772);
+}
+
+.btn-cancel{
+    background-color:  white; 
+    margin-top: 5px;
+    padding: 10px;
+    color: grey;
+    border-radius: 6px;
+    border: none;
+    height: 40px;
+}
+
+.btn-cancel:hover{
+    color: black;
+}
+
+/* ----------------------------- */
+
+@media(max-width:400px ){
+    body{
+        background-color: #E0E9FF;
+    }
+
+    .container{
+        margin-top: 70px;
+    }
+}
